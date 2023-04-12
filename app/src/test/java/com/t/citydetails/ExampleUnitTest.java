@@ -1,4 +1,4 @@
-package com.t.gitapi;
+package com.t.citydetails;
 
 import org.junit.Test;
 

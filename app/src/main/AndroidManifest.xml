@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.t.gitapi">
+    package="com.t.citydetails">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -10,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GitHubAPI">
         <activity
-            android:name=".DataInsertActivity"
+            android:name="com.t.citydetails.DataInsertActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.t.citydetails.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".splashActivity"
+            android:name="com.t.citydetails.splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

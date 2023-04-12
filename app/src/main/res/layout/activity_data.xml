@@ -8,41 +8,30 @@
     android:background="#BCEA9B"
     android:clickable="true">
 
-
-    <ImageView
-        android:id="@+id/shareimg"
-        android:layout_width="40dp"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toEndOf="@+id/repo_data"
-        app:srcCompat="@drawable/ic_baseline_share_24" />
-
     <TextView
-        android:id="@+id/repo_data"
+        android:id="@+id/city_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:clickable="true"
-        android:text="Repo Name"
+        android:text="City Name"
         android:textColor="#1C0D0D"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/desp_data"
+        android:id="@+id/state_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Description"
+        android:text="State name"
         android:textColor="#771C0D0D"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="@+id/repo_data"
-        app:layout_constraintTop_toBottomOf="@+id/repo_data" />
+        app:layout_constraintStart_toStartOf="@+id/city_data"
+        app:layout_constraintTop_toBottomOf="@+id/city_data" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

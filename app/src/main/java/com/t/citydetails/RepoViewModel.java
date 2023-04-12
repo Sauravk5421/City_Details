@@ -1,4 +1,4 @@
-package com.t.gitapi;
+package com.t.citydetails;
 
 
 import android.app.Application;
@@ -24,9 +24,7 @@ public class RepoViewModel extends AndroidViewModel {
     public void insert(RepoActivity name){
         gitRepo.insertData(name);
     }
-    public void delete(RepoActivity name){
-        gitRepo.deleteData(name);
-    }
+
     public LiveData<List<RepoActivity>> getAllGit(){
         return gitlist;
     }

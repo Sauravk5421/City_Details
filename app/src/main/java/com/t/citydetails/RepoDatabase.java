@@ -1,4 +1,4 @@
-package com.t.gitapi;
+package com.t.citydetails;
 
 
 import android.content.Context;

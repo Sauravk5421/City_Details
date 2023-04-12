@@ -1,4 +1,4 @@
-package com.t.gitapi;
+package com.t.citydetails;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -20,7 +20,6 @@ public class GitRepo {
 
     }
     public void insertData(RepoActivity name){new InsertTask(gitDao).execute(name);}
-    public void deleteData(RepoActivity name){new DeleteTask(gitDao).execute(name);}
 
     public LiveData<List<RepoActivity>> getAllData()
     {
@@ -40,23 +39,4 @@ public class GitRepo {
             return null;
         }
     }
-
-
-
-
-    private static class DeleteTask extends AsyncTask<RepoActivity,Void,Void>{
-
-        private GitDao gitDao;
-
-        public DeleteTask(GitDao gitDao) {
-            this.gitDao = gitDao;
-        }
-
-        @Override
-        protected Void doInBackground(RepoActivity... repoActivities) {
-            gitDao.delete(repoActivities[0]);
-            return null;
-        }
-    }
-
 }
